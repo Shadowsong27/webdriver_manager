@@ -92,7 +92,7 @@ def chrome_version(browser_type=ChromeType.GOOGLE):
             OSType.WIN: r'reg query "HKEY_CURRENT_USER\Software\Google\Chrome\BLBeacon" /v version'
         },
         ChromeType.CHROMIUM: {
-            OSType.LINUX: 'chromium --version',
+            OSType.LINUX: 'chromium-browser --version',
             OSType.MAC: r'/Applications/Chromium.app/Contents/MacOS/Chromium --version',
             OSType.WIN: r'reg query "HKEY_CURRENT_USER\Software\Chromium\BLBeacon" /v version'
         }
